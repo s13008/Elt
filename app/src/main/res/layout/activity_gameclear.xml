@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.s13008.elt.GameclearActivity"
+    android:background="#FFFFFF"
+    android:id="@+id/gameclear">
+
+    <TextView
+        android:id="@+id/text_gameclear"
+        android:text="今回のスコア"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:text="00秒"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_gameclear"
+        android:layout_alignRight="@+id/button_record"
+        android:layout_alignEnd="@+id/button_record" />
+
+    <Button
+        android:id="@+id/button_record"
+        android:text="タイムを記録する"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_score"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/text_pastcord"
+        android:text="過去の最高記録"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_record"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/past_cord"
+        android:text="00秒"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_pastcord"
+        android:layout_alignRight="@+id/button_record"
+        android:layout_alignEnd="@+id/button_record" />
+    <TextView
+        android:id="@+id/text_comment"
+        android:text="Fightだよ!!"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img" />
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/kuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/past_cord"
+        android:layout_alignLeft="@+id/text_pastcord"
+        android:layout_alignStart="@+id/text_pastcord" />
+    <Button
+        android:id="@+id/button_backmode"
+        android:text="モード選択"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_width="170sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/button_retry"
+        android:text="リトライ"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_width="170sp"
+        android:layout_height="50sp"
+        android:layout_alignTop="@+id/button_backmode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -7,6 +7,7 @@
     android:background="#FFFFFF"
     android:id="@+id/mode">
 
+
     <TextView
         android:id="@+id/text_mode"
         android:text="モード選択"
@@ -28,6 +29,7 @@
         android:layout_alignLeft="@+id/button_mode2"
         android:layout_alignStart="@+id/button_mode2"
         android:layout_marginTop="37dp" />
+
     <Button
         android:id="@+id/button_mode2"
         android:background="#dcdcdc"
